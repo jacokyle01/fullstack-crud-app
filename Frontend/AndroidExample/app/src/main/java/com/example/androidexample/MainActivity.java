@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     private void sendRequest() {
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(
                 Request.Method.GET,
-                URL_JSON_OBJECT,
+                URL_JSON_OBJECT, //get the first person
                 null, // Pass null as the request body since it's a GET request
                 new Response.Listener<JSONObject>() {
                     @Override
